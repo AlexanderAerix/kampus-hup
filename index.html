@@ -3,117 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            padding:0;
-            margin:0;
-        }
-        body {
-            padding:0%; 
-            margin: 10px;
-            /* height: 10dvh; */
-        }
-        #wrapper {
-            padding:10px;
-        width: 50%;
-        margin:auto;
-        border: 2px solid black;
-        }
-      #wrapper h4 {
-        color: blue;
-        
-      }
-      #header {
-        background-color: darkblue;
-        width: 100%;
-        padding:10px;
-        
-      }
-      #header p {
-        color: white;
-      }
-      #nav {
-        background-color: rgb(182, 181, 188);
-        width: 100%;
-        padding:10px;
-        margin:auto;
-      }
-      #nav p {
-        color: blue;
-      }
-     
-      #main h4 {
-        color: blue;
-      }
-      #main li {
-        border: 1px solid black;
-        margin:0px;
-        list-style-type: none;
-        padding:10px;
-      }
-      #date1 {
-        color: rgb(155, 155, 166);
-        font-size: 75%;
-
-      }
-     
-    </style>
+    <title>kampus hup</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="wrapper">
       <div id="header">
-        <p>HEADER</p>
-        <h3>kampus hup</h3>
+        <h3 class="header1">
+          kampus <br />
+          hup
+        </h3>
         <!-- <br /> -->
-        <h3>papan pengumuman</h3>
+        <h3 class="header1">
+          papan pengumuman <br />
+          UNIWA
+        </h3>
+        <div id="nav">
+          <h3 class="nav1">Pengumuman</h3>
+          <h3 class="nav1">Tentang</h3>
+        </div>
+        <div id="serch">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="pengumuman terbaru"
+            class="search-input"
+          />
+          <input type="button" value="Cari judul" class="cari" />
+        </div>
       </div>
-      <div id="nav">
-        <p>NAV<h3>Pengumuman Tentang</h3></p>
-        
-        <h1 id="--">-----------------------------------------------------------------</h1>
-        
-      </div>
-
-      
       <div id="main">
         
-        <h4>MAIN .H1</h4>
-        <p>pengumuman terbaru</p>
-        <p>
-          cari judul <input type="text" name="cari" id="cari" />
-          <input type="button" value="Cari" />
-        </p>
 
-        <h4>ARTICLE -TIGA PENGUMUMAN</h4>
-        <li >
-          <h2>  Judul pengumuman 1</h2>
-          <p>Ringkasan satu atau dua kalimat. <span id="date1">12 September 2026.akademik</span></p>
-          
-        </li>
+        <h4>ARTICLE</h4>
+        <div class="pengumuman">
+          <li id="article1">
+            <h2>KAMPUS MELEDAK</h2>
 
-        <li>
-          <h2>Judul pengumuman 2</h2>
-          <p>Ringkasan .<span id="date1">15 September 2026.beasiswa</span></p>
-          
-        </li>
-        <li>
-          <h2>Judul pengumuman 3</h2>
-          <p>Ringkasan.<span id="date1">19 oktober 2026.fasilitas</span></p>
-          
-        </li>
-        <h1 id="--">------------------------------------------------------------------</h1>
+            <img class="picture" src="kampus_meledak.jpe" alt="Paris" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Architecto ea obcaecati, laboriosam quasi quibusdam animi laborum
+              sunt vel esse adipisci corrupti. Impedit perspiciatis quibusdam
+              perferendis.
+            </p>
+            <span id="date1">12 September 2026.akademik</span>
+          </li>
+
+          <li id="article1">
+            <h2>MAHASISWA WAJIB NGOPI</h2>
+            <img class="picture" src="kampus_meledak.jpe" alt="Paris" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+              tempora, dolore aut eaque est reiciendis autem voluptate dolorum
+              quam deleniti recusandae illum debitis dicta repellat. .
+            </p>
+            <span id="date1">15 September 2026.beasiswa</span>
+          </li>
+          <li id="article1">
+            <h2>MBG UNTUK MAHASISWA</h2>
+            <img class="picture" src="mg.jpe" alt="Paris" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae ut beatae animi ab adipisci veritatis quas saepe, quis
+              maiores reiciendis recusandae minus sunt. Nemo, sunt.
+            </p>
+            <span id="date1">19 oktober 2026.fasilitas</span>
+          </li>
+        </div>
       </div>
-      <div id="footer 1">
-        <h4>H2</h4>
-        <h2>Tentang aplikasi ini</h2>
-        <h1 id="--">------------------------------------------------------------------</h1>
-      </div>
-      <div id="footer 2">
-        <h4>FOOTER</h4>
-        <p>Pemrograman Web .[tahun].[nama / NIM]</p>
+      <div id="footer">
+        <div id="footer 1">
+          <h2>Tentang aplikasi ini</h2>
+        </div>
+        <div id="footer 2">
+          <p>Pemrograman Web Arif rahmat darmawan 2026 nim:20252210169</p>
+        </div>
       </div>
     </div>
+
+    <script type="module" src="main.js"></script>
   </body>
 </html>
