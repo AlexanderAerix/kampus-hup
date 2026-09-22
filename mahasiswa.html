@@ -1,0 +1,33 @@
+<script>
+function filterByName(event) {
+  const searchTerm = event.target.value.trim().toLowerCase();
+  const listItems = document.querySelectorAll("ul#list li");
+
+  listItems.forEach(function(item) {
+    item.style.display = 'revert';
+
+    if (!item.innerText.toLowerCase().includes(searchTerm)) {
+      item.style.display = 'none';
+    }
+  })
+}
+</script>
+
+<input 
+  type="search" 
+  placeholder="Type here to filter the list" 
+  oninput="filterByName(event)"
+>
+
+<ul id="list">
+  <li>Dog</li>
+  <li>Cat</li>
+  <li>Hamster</li>
+  <li>Fish</li>
+  <li>Chicken</li>
+  <li>Pig</li>
+  <li>Cow</li>
+  <li>Giraffe</li>
+  <li>Elephant</li>
+  <li>Tiger</li>
+</ul>

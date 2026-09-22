@@ -81,7 +81,6 @@
   align-items: center;
   width: auto;
   padding-top: 10px;
-  /* border: 1px solid black; */
   text-align: center;
 }
 
@@ -136,6 +135,7 @@
   margin-top: 50px;
   text-align: center;
 }
+
 .nav2 {
   text-decoration: none;
 }
