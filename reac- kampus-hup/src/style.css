@@ -14,7 +14,7 @@
 
 #header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 10px;
@@ -30,8 +30,10 @@
 #nav {
   display: flex;
   justify-content: center;
-  width: 50%;
-  margin: 0 auto;
+  width: auto;
+margin-left: 150px;
+  /* border:1px solid black; */
+  /* margin-right: 5px; */
 }
 
 #nav p {
@@ -40,7 +42,7 @@
 
 .nav1 {
   display: block;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   margin: 10px;
   color: black;
   text-align: center;
@@ -123,7 +125,7 @@
   text-align: center;
   margin: auto;
   padding: auto;
-  border: 1px solid black;
+ 
 }
 
 #articlechild {
@@ -136,6 +138,121 @@
   text-align: center;
 }
 
-.nav2 {
-  text-decoration: none;
+
+.judul {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.hidden-xs {
+  display: none;
+}
+#listMahasiswa{
+  text-align: center;
+
+}
+.namaMHS{
+  font-weight: bold;
+}
+.ipkMHS,.smesterMHS{  
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  #header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 8px;
+    height: auto;
+  }
+
+  .header1 {
+    justify-self: start;
+    margin: 0;
+  }
+
+  #nav {
+    justify-self: center;
+    width: auto;
+    margin: 0;
+  }
+
+  .nav1 {
+    margin: 4px;
+    white-space: nowrap;
+  }
+
+  #serch {
+    align-items: center;
+    justify-self: end;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .search-input {
+    width: clamp(110px, 17vw, 170px);
+  }
+
+  .hidden-xs {
+    display: inline;
+  }
+}
+
+@media (max-width: 560px) {
+  #header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 8px;
+    row-gap: 8px;
+    height: auto;
+    padding: 10px 12px;
+  }
+
+  .header1 {
+    grid-column: 1;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  #nav {
+    grid-column: 2;
+    justify-self: end;
+    gap: 4px;
+    margin: 0;
+  }
+
+  .nav1 {
+    margin: 4px 2px;
+    font-size: clamp(12px, 3.6vw, 15px);
+    white-space: nowrap;
+  }
+
+  .hidden-xs {
+    display: none;
+  }
+
+  #serch {
+    grid-column: 1 / -1;
+    width: 100%;
+    gap: 4px;
+    padding: 0;
+  }
+
+  .search-input {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    padding: 9px 12px;
+  }
+
+  .cari {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 8px 10px;
+  }
+
+  #main {
+    padding-top: 8px;
+  }
 }

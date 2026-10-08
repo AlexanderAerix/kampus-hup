@@ -1,52 +1,41 @@
 import { useState } from "react";
-import { dataA } from "./data.js";
+import { dataA, dataB } from "./data.js";
 import "./style.css";
 
 export default function App() {
-  // useState = "kotak penyimpan nilai" yang kalau berubah, otomatis
-  // bikin React render ulang bagian yang pakai nilai itu.
-  // searchTerm = nilai sekarang, setSearchTerm = fungsi buat mengubahnya.
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Ini pengganti addEventListener("input", filterByName) di main.js.
-  // Setiap kali user ngetik di input, fungsi ini jalan.
   function handleSearchChange(event) {
     setSearchTerm(event.target.value);
   }
 
-  // Di vanilla JS tadi, filter dilakukan dengan manipulasi DOM langsung
-  // (item.style.display = "none"). Di React, kita TIDAK menyentuh DOM
-  // secara manual. Sebagai gantinya, kita hitung ulang data yang mau
-  // ditampilkan, lalu biarkan React yang menggambar ulang elemennya.
   const filteredMahasiswa = dataA.filter((mhs) =>
     mhs.nama.toLowerCase().includes(searchTerm.trim().toLowerCase()),
+  );
+  const filteredArticle = dataB.filter((article) =>
+    `${article.judul} ${article.isi} ${article.tanggal}`
+      .toLowerCase()
+      .includes(searchTerm.trim().toLowerCase()),
   );
 
   return (
     <div id="wrapper">
       <div id="header">
         <h3 className="header1">
-          kampus <br />
+          kampus <br class="hidden-xs" />
           hup
         </h3>
-        <h3 className="header1">
-          papan pengumuman <br />
-          UNIWA
-        </h3>
+       
 
         <div id="nav">
-          <h3 className="nav1">Pengumuman</h3>
-          <h3 className="nav1">Tentang</h3>
-          {/* href tetap boleh dipakai kalau memang mau pindah halaman biasa.
-              Kalau nanti pakai react-router, ini akan diganti jadi <Link>. */}
-          <a href="mahasiswa.html" className="nav1">
-            Mahasiswa
-          </a>
+          <h3 className="nav1">ARTICLE</h3>
+          
+        
+           <h3 className="nav1">MAHASISWA</h3>
         </div>
 
         <div id="serch">
-          {/* Beda dari vanilla: input di sini "controlled" -> nilainya
-              selalu sama dengan searchTerm yang ada di state React. */}
+          {}
           <input
             type="search"
             className="search-input"
@@ -62,22 +51,27 @@ export default function App() {
       <div id="main">
         <h4>ARTICLE</h4>
         <div className="pengumuman">
-          {/* Belum ada sumber data pengumuman di project awal, jadi
-              di sini cuma disiapkan tempatnya. Kalau nanti ada data
-              pengumuman (mirip dataA), tinggal di-map seperti daftar
-              mahasiswa di bawah. */}
-          <li id="articlechild"></li>
+          {filteredArticle.map((article) => (
+            <li key={article.judul}>
+              <div className="judul">{article.judul}</div>  
+              <div className="isi">{article.isi}</div>  
+              <div className="tanggal">{article.tanggal}</div>
+            </li>
+          ))}
+          {filteredArticle.length === 0 && (
+            <li id="articlechild">Pengumuman tidak ditemukan.</li>
+          )}
         </div>
 
         <h4>MAHASISWA</h4>
-        <ul id="listMahasiswa">
-          {/* .map() = pengganti loop forEach + document.createElement.
-              Untuk tiap objek "mhs" di array hasil filter, kita bikin
-              satu <li>. "key" wajib diisi (di sini pakai nama) supaya
-              React tahu mana elemen yang berubah. */}
+        <ul  id="listMahasiswa">
+          {}
           {filteredMahasiswa.map((mhs) => (
             <li key={mhs.nama}>
-              {mhs.nama} — semester {mhs.smester} — {mhs.prodi} — IPK {mhs.ipk}
+              <div className="namaMHS">{mhs.nama}</div> 
+              <div className="smesterMHS"><p>Semester: {mhs.smester} </p></div>
+              <div className="prodi">{mhs.prodi}</div>
+              <div className="ipkMHS"><p>IPK: {mhs.ipk}</p></div> 
             </li>
           ))}
 
