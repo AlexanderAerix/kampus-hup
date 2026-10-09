@@ -64,15 +64,27 @@ margin-left: 150px;
   font-size: 50px;
 }
 
-#main li {
+#liartickle {
   list-style-type: none;
+  padding: 5px;
+  margin: 10px;
+  align-items: center;
+  background-color: rgb(249, 246, 238);
+  border-radius: 50px;
+  border: 3px solid rgba(212, 175, 55, 0.43);
+  width:50%;
+}
+#limahasiswa{
+   list-style-type: none;
   padding: 10px;
   margin: 10px;
   background-color: rgb(249, 246, 238);
-  border-radius: 50px;
+  border-radius: 30px;
+  border: 1px solid black;
+  width: 20%;
 }
 
-#date1 {
+.tanggal {
   color: rgb(155, 155, 166);
   font-size: 75%;
   text-align: center;
@@ -117,17 +129,39 @@ margin-left: 150px;
 
 .pengumuman {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  height: auto;
+  height: 305px;
   width: 90%;
-  border-radius: 10px;
+  padding-left: 3%;
+  border-radius: 50px;
   text-align: center;
   margin: auto;
-  padding: auto;
+  /* padding: auto; */
+ border:3px solid rgba(212, 175, 55, 0.43);
+ flex-wrap: wrap;
+   overflow-y: scroll;
+   /* background-color: rgba(212, 175, 55, 0.43); */
  
 }
+.pengumuman::-webkit-scrollbar {
+    display: none;
+    
+}
 
+#liartickle{
+   flex: 0 0 calc(31.333% - 10px);
+  
+  
+
+  
+}
+/* #limahasiswa{
+   flex: 0 0 calc(31.333% - 10px);
+   align-items: center;
+  box-sizing: border-box;
+   flex-direction: row;
+} */
 #articlechild {
   width: 90%;
   padding: 10px;
@@ -149,7 +183,16 @@ margin-left: 150px;
 }
 #listMahasiswa{
   text-align: center;
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+border: 1px solid black;
 
+}
+#limahasiswa{
+   flex: 0 0 calc(20.333% - 10px);
+  
 }
 .namaMHS{
   font-weight: bold;
@@ -158,12 +201,16 @@ margin-left: 150px;
   gap: 5px;
 }
 
+
 @media (max-width: 768px) {
   #header {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     gap: 8px;
     height: auto;
+  }
+  .pengumuman {
+      padding-left: 4.8%;
   }
 
   .header1 {
@@ -197,9 +244,30 @@ margin-left: 150px;
   .hidden-xs {
     display: inline;
   }
+ #liartickle{
+   flex: 0 0 calc(45.333% - 10px);
+
+
+  
+}
 }
 
 @media (max-width: 560px) {
+  #limahasiswa{
+   flex: 0 0 calc(30.333% - 10px);
+  
+}
+  #liartickle{
+   flex: 0 0 calc(100% - 10px);
+   
+
+
+  
+}
+  .pengumuman{
+    padding-left: 0;
+    padding-right: 2%;
+  }
   #header {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);

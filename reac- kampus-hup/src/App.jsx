@@ -52,7 +52,7 @@ export default function App() {
         <h4>ARTICLE</h4>
         <div className="pengumuman">
           {filteredArticle.map((article) => (
-            <li key={article.judul}>
+            <li id="liartickle" key={article.judul}>
               <div className="judul">{article.judul}</div>  
               <div className="isi">{article.isi}</div>  
               <div className="tanggal">{article.tanggal}</div>
@@ -64,10 +64,11 @@ export default function App() {
         </div>
 
         <h4>MAHASISWA</h4>
+        
         <ul  id="listMahasiswa">
           {}
           {filteredMahasiswa.map((mhs) => (
-            <li key={mhs.nama}>
+            <li id="limahasiswa" key={mhs.nama}>
               <div className="namaMHS">{mhs.nama}</div> 
               <div className="smesterMHS"><p>Semester: {mhs.smester} </p></div>
               <div className="prodi">{mhs.prodi}</div>
