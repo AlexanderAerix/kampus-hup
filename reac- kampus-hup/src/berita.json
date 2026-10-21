@@ -1,0 +1,87 @@
+
+[
+  {
+    "id": 1,
+    "judul": "Perkembangan Teknologi AI Semakin Pesat pada 2026",
+    "slug": "perkembangan-teknologi-ai-2026",
+    "ringkasan": "Teknologi kecerdasan buatan terus berkembang dan mulai digunakan dalam berbagai bidang kehidupan.",
+    "isi": "Perkembangan teknologi kecerdasan buatan atau Artificial Intelligence (AI) semakin pesat pada tahun 2026. Berbagai perusahaan teknologi mengembangkan sistem AI untuk membantu pekerjaan manusia, mulai dari pendidikan, kesehatan, hingga industri kreatif. Meskipun memberikan banyak manfaat, penggunaan AI juga menimbulkan tantangan terkait privasi, keamanan data, dan lapangan pekerjaan.",
+    "kategori": "Teknologi",
+    "penulis": "Andi Pratama",
+    "tanggal": "2026-10-20",
+    "gambar": "https://placehold.co/800x450/1e293b/ffffff?text=Artificial+Intelligence",
+    "views": 1250,
+    "featured": true,
+    "tags": ["AI", "Teknologi", "Digital"]
+  },
+  {
+    "id": 2,
+    "judul": "Mahasiswa Informatika Kembangkan Aplikasi Berbasis Web",
+    "slug": "mahasiswa-informatika-kembangkan-aplikasi-web",
+    "ringkasan": "Sekelompok mahasiswa mengembangkan aplikasi web untuk membantu pengelolaan informasi dan aktivitas harian.",
+    "isi": "Mahasiswa Informatika mengembangkan aplikasi berbasis web sebagai bagian dari proyek pembelajaran. Aplikasi tersebut dirancang untuk membantu pengguna mengelola informasi secara lebih mudah melalui antarmuka yang sederhana. Proyek ini juga menjadi sarana bagi mahasiswa untuk mempelajari pengembangan frontend, backend, dan pengelolaan basis data.",
+    "kategori": "Pendidikan",
+    "penulis": "Siti Rahmawati",
+    "tanggal": "2026-10-19",
+    "gambar": "https://placehold.co/800x450/164e63/ffffff?text=Web+Development",
+    "views": 870,
+    "featured": false,
+    "tags": ["Mahasiswa", "Informatika", "Web"]
+  },
+  {
+    "id": 3,
+    "judul": "Tren Game Online Mendorong Industri Esports",
+    "slug": "tren-game-online-industri-esports",
+    "ringkasan": "Perkembangan game online membuka peluang baru dalam industri esports dan pembuatan konten digital.",
+    "isi": "Industri game online terus berkembang seiring meningkatnya minat masyarakat terhadap hiburan digital. Kompetisi esports, streaming, dan pembuatan konten game menjadi beberapa bidang yang menawarkan peluang bagi generasi muda. Namun, pemain tetap perlu mengatur waktu bermain agar aktivitas tersebut tidak mengganggu pendidikan maupun pekerjaan.",
+    "kategori": "Gaming",
+    "penulis": "Budi Santoso",
+    "tanggal": "2026-10-18",
+    "gambar": "https://placehold.co/800x450/581c87/ffffff?text=Gaming+Esports",
+    "views": 2340,
+    "featured": true,
+    "tags": ["Gaming", "Esports", "Game Online"]
+  },
+  {
+    "id": 4,
+    "judul": "Tips Menjaga Keamanan Data Pribadi di Internet",
+    "slug": "tips-keamanan-data-pribadi-internet",
+    "ringkasan": "Pengguna internet perlu menerapkan kebiasaan digital yang aman untuk melindungi informasi pribadi.",
+    "isi": "Keamanan data pribadi menjadi hal penting di era digital. Pengguna internet disarankan menggunakan kata sandi yang kuat dan unik, mengaktifkan autentikasi dua faktor, serta menghindari tautan mencurigakan. Selain itu, pengguna perlu berhati-hati ketika membagikan informasi pribadi pada situs atau aplikasi yang belum terpercaya.",
+    "kategori": "Keamanan",
+    "penulis": "Dina Putri",
+    "tanggal": "2026-10-17",
+    "gambar": "https://placehold.co/800x450/7f1d1d/ffffff?text=Cyber+Security",
+    "views": 1560,
+    "featured": false,
+    "tags": ["Keamanan", "Internet", "Privasi"]
+  },
+  {
+    "id": 5,
+    "judul": "Belajar Pemrograman Menjadi Keterampilan yang Bernilai",
+    "slug": "belajar-pemrograman-keterampilan-bernilai",
+    "ringkasan": "Kemampuan pemrograman dapat membantu pelajar memahami teknologi dan membangun solusi digital.",
+    "isi": "Pemrograman merupakan keterampilan yang dapat digunakan untuk membangun website, aplikasi, dan berbagai sistem digital. Pemula dapat memulai dengan mempelajari HTML, CSS, dan JavaScript sebelum melanjutkan ke framework seperti React. Konsistensi berlatih dan mengerjakan proyek kecil dapat membantu meningkatkan kemampuan pemrograman secara bertahap.",
+    "kategori": "Edukasi",
+    "penulis": "Rizky Firmansyah",
+    "tanggal": "2026-10-16",
+    "gambar": "https://placehold.co/800x450/14532d/ffffff?text=Learn+Programming",
+    "views": 980,
+    "featured": false,
+    "tags": ["Programming", "JavaScript", "React"]
+  },
+  {
+    "id": 6,
+    "judul": "Inovasi Energi Terbarukan untuk Masa Depan",
+    "slug": "inovasi-energi-terbarukan",
+    "ringkasan": "Energi matahari dan angin menjadi bagian dari upaya pengembangan sumber energi yang lebih berkelanjutan.",
+    "isi": "Pengembangan energi terbarukan menjadi salah satu upaya untuk mengurangi ketergantungan pada bahan bakar fosil. Teknologi panel surya dan turbin angin terus dikembangkan agar semakin efisien. Penerapan energi terbarukan membutuhkan dukungan infrastruktur, investasi, dan kebijakan yang sesuai.",
+    "kategori": "Lingkungan",
+    "penulis": "Nadia Permata",
+    "tanggal": "2026-10-15",
+    "gambar": "https://placehold.co/800x450/365314/ffffff?text=Renewable+Energy",
+    "views": 640,
+    "featured": false,
+    "tags": ["Lingkungan", "Energi", "Inovasi"]
+  }
+]
