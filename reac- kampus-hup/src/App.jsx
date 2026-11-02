@@ -24,7 +24,7 @@ export default function App() {
       <main id="main">
         <Routes>
           <Route path="/" element={<Beranda />} />
-          <Route path="/berita" element={<Berita />} />
+          <Route path="/beritas" element={<Berita />} />
           <Route path="/tentang" element={<Tentang />} />
         </Routes>
       </main>

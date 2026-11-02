@@ -32,7 +32,7 @@ export default function Beranda() {
         
         <ul  id="listMahasiswa">
           {}
-          {filteredMahasiswa.map((mhs) => (
+          {dataA.map((mhs) => (
             <li id="limahasiswa" key={mhs.nama}>
               <div className="namaMHS">{mhs.nama}</div> 
               <div className="smesterMHS"><p>Semester: {mhs.smester} </p></div>
