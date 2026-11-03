@@ -11,9 +11,8 @@ export default function Beranda() {
   );
 
   return (
-    <div id="wrapper">
-        <div id="header">
-        
+    <div className="home-page">
+      <div className="home-search-header">
 
         <div id="serch">
           <input
@@ -27,12 +26,11 @@ export default function Beranda() {
         </div>
       </div>
 
-      <div id="main">
+      <div className="home-main">
         <h4>MAHASISWA</h4>
         
-        <ul  id="listMahasiswa">
-          {}
-          {dataA.map((mhs) => (
+        <ul id="listMahasiswa">
+          {filteredMahasiswa.map((mhs) => (
             <li id="limahasiswa" key={mhs.nama}>
               <div className="namaMHS">{mhs.nama}</div> 
               <div className="smesterMHS"><p>Semester: {mhs.smester} </p></div>
@@ -42,7 +40,7 @@ export default function Beranda() {
           ))}
 
           {filteredMahasiswa.length === 0 && (
-            <li>Mahasiswa tidak ditemukan.</li>
+            <li className="empty-state">Mahasiswa tidak ditemukan.</li>
           )}
         </ul>
       </div>
